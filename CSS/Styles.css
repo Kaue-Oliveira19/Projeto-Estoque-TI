@@ -1,0 +1,75 @@
+/*Altera a página inteira*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/*Altera o corpo da página inteira*/
+body{
+    background-color: #00A24D;
+    min-height: 100vh;
+}
+
+/*Altera a logo da Oral Sin*/
+img{
+    margin-left: -15%;
+    width: 15%;
+    height: 25%;
+}
+
+/*Altera a parte superior do site*/
+header {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    min-height: 66px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Altera a posição da lista não ordenada*/
+header ul{
+    position: relative; 
+}
+
+/*Altera a lista*/
+header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+/*Altera os links das lista*/
+header ul li a{
+    color: #00A24D;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+
+/**/
+header ul li a:hover{
+    background-color: rgba(216, 216, 216, 0.5);
+}
+
+/**/
+header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: rgba(216, 216, 216, 0.5);
+    display: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(216, 216, 216, 0.5);
+}
